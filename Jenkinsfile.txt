@@ -7,7 +7,7 @@ pipeline {
                 branch 'master'
                 steps {
                     step{
-                        echo "I have run my ${env.BRANCH_NAME}, the question is, will my child"
+                        echo("I have run my ${env.BRANCH_NAME}, the question is, will my child")
                     }
                 }
             }
@@ -17,7 +17,7 @@ pipeline {
                 branch 'staging'
                 steps {
                     step{
-                        echo "I have run my ${env.BRANCH_NAME}, the question is, will my child"
+                        echo("I have run my ${env.BRANCH_NAME}, the question is, will my child")
                     }
                 }
             }
