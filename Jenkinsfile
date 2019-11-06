@@ -1,14 +1,11 @@
 pipeline {
     agent any
-
     stages {
         stage('master') {
             when{
                 branch 'master'
                 steps {
-                    step{
-                        echo("I have run my ${env.BRANCH_NAME}, the question is, will my child")
-                    }
+                    echo("I have run my ${env.BRANCH_NAME}, the question is, will my child")
                 }
             }
         }
@@ -16,9 +13,7 @@ pipeline {
             when{
                 branch 'staging'
                 steps {
-                    step{
-                        echo("I have run my ${env.BRANCH_NAME}, the question is, will my child")
-                    }
+                    echo("I have run my ${env.BRANCH_NAME}, the question is, will my child")
                 }
             }
         }
